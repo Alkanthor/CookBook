@@ -27,13 +27,17 @@ namespace CookBook
 
         public void ExportJsonFile(string path)
         {
-            string jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(Cookbook, Formatting.Indented);
+            string jsonStr = JsonConvert.SerializeObject(Cookbook, Formatting.Indented);
             File.WriteAllText(path, jsonStr);
         }
 
-        public void ImportFromFile()
+        public void ImportFromFile(string defaultRecipePath)
         {
-            throw new NotImplementedException();
+            using (StreamReader reader = new StreamReader(defaultRecipePath))
+            {
+                string json = reader.ReadToEnd();
+                Cookbook = JsonConvert.DeserializeObject<Cookbook>(json);
+            }
         }
 
         public List<RecipeItem> CalculateRecommendations()

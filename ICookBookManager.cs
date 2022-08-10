@@ -11,7 +11,7 @@ namespace CookBook
         void AddRecipe(RecipeItem recipe);
         void DeleteRecipe(RecipeItem recipe);
         void ExportJsonFile(string path);
-        void ImportFromFile();
+        void ImportFromFile(string path);
         List<RecipeItem> CalculateRecommendations();
     }
 }
