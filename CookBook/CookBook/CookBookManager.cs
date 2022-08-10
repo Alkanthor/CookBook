@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace CookBook
 {
     public class CookBookManager: ICookBookManager
     {
-        public List<RecipeItem> Recipes { get; set; }
-        public List<string> Ingredients { get; set; }
+        public Cookbook Cookbook { get; set; }
         public List<string> IngredientsAvailable { get; set; }
+
+        public CookBookManager()
+        {
+            Cookbook= new Cookbook();
+        }
         public void AddRecipe(RecipeItem recipe)
         {
-            throw new NotImplementedException();
+            Cookbook.Recipes.Add(recipe);
         }
 
         public void DeleteRecipe(RecipeItem recipe)
@@ -19,9 +25,10 @@ namespace CookBook
             throw new NotImplementedException();
         }
 
-        public void ExportJsonFile()
+        public void ExportJsonFile(string path)
         {
-            throw new NotImplementedException();
+            string jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(Cookbook, Formatting.Indented);
+            File.WriteAllText(path, jsonStr);
         }
 
         public void ImportFromFile()

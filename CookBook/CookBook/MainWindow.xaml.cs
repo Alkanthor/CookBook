@@ -20,9 +20,24 @@ namespace CookBook
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string defaultRecipePath = $"./defaultRecipe.json";
         public MainWindow()
         {
             InitializeComponent();
+            CookBookManager cookBookManager = new CookBookManager();
+
+            //Block of test data
+            List<string> testDataIngredients = new List<string>(){ "flour", "eggs", "milk", "jam", "soy sauce", "chicken meat", "whipping cream" };
+            RecipeItem pancakes = new RecipeItem()
+            {
+                Name = "Pancakes",
+                MustIngredients = new List<string>() { "flour", "eggs", "milk", "jam"},
+                OptIngredients = new List<string>() { "whipping cream"},
+                Complexity = Complexity.VeryFast,
+            };
+            cookBookManager.Cookbook.Ingredients = testDataIngredients;
+            cookBookManager.AddRecipe(pancakes);
+            cookBookManager.ExportJsonFile(defaultRecipePath);
         }
     }
 }

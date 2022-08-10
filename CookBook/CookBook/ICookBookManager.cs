@@ -6,12 +6,11 @@ namespace CookBook
 {
     public interface ICookBookManager
     {
-        List<RecipeItem> Recipes { get; set; }
-        List<string> Ingredients { get; set; }
+        Cookbook Cookbook { get; set; }
         List<string> IngredientsAvailable { get; set; }
         void AddRecipe(RecipeItem recipe);
         void DeleteRecipe(RecipeItem recipe);
-        void ExportJsonFile();
+        void ExportJsonFile(string path);
         void ImportFromFile();
         List<RecipeItem> CalculateRecommendations();
     }

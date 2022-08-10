@@ -1,0 +1,31 @@
+{
+  "Ingredients": [
+    "flour",
+    "eggs",
+    "milk",
+    "jam",
+    "soy sauce",
+    "chicken meat",
+    "whipping cream"
+  ],
+  "Recipes": [
+    {
+      "Name": "Pancakes",
+      "RecipeUrl": null,
+      "MustIngredients": [
+        "flour",
+        "eggs",
+        "milk",
+        "jam"
+      ],
+      "OptIngredients": [
+        "whipping cream"
+      ],
+      "IsVegetarian": false,
+      "IsSpicy": false,
+      "Complexity": 0,
+      "Instructions": null,
+      "MyRating": 0
+    }
+  ]
+}
