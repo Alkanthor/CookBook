@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Roman training\\CookBook\\CookBook\\CookBook\\CookBook.csproj": {}
+    "c:\\Roman training\\CookBook\\CookBook.csproj": {}
   },
   "projects": {
-    "C:\\Roman training\\CookBook\\CookBook\\CookBook\\CookBook.csproj": {
+    "c:\\Roman training\\CookBook\\CookBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Roman training\\CookBook\\CookBook\\CookBook\\CookBook.csproj",
+        "projectUniqueName": "c:\\Roman training\\CookBook\\CookBook.csproj",
         "projectName": "CookBook",
-        "projectPath": "C:\\Roman training\\CookBook\\CookBook\\CookBook\\CookBook.csproj",
+        "projectPath": "c:\\Roman training\\CookBook\\CookBook.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Roman training\\CookBook\\CookBook\\CookBook\\obj\\",
+        "outputPath": "c:\\Roman training\\CookBook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

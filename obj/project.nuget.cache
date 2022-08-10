@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RAf4fDtmFHntYmmG9GWo71t58/UNhH0O85qwTqVVHMw74xIC0/lgP3WBZt+0T+UjB3uTlL55vEQzkWP6NSJksA==",
+  "success": true,
+  "projectFilePath": "c:\\Roman training\\CookBook\\CookBook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
